@@ -17,5 +17,3 @@ SELECT [AddressID]
       ,[rowguid]
       ,[ModifiedDate]
 FROM [AdventureWorks2019].[Person].[Address]
-
-
