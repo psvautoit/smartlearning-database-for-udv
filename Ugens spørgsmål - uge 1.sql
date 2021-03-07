@@ -17,3 +17,5 @@ SELECT [AddressID]
       ,[rowguid]
       ,[ModifiedDate]
 FROM [AdventureWorks2019].[Person].[Address]
+
+--Mærkeligt jeg har ikke nogen tabel der rimer på PostalCodes eller City
