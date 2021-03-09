@@ -3,10 +3,6 @@
 SELECT count(*)
 FROM AdventureWorks2019.Person.Person
 
-
-SELECT PostalCode, City,  *
-FROM Person.Address
-
 SELECT [AddressID]
       ,[AddressLine1]
       ,[AddressLine2]
@@ -19,3 +15,12 @@ SELECT [AddressID]
 FROM [AdventureWorks2019].[Person].[Address]
 
 --Mærkeligt jeg har ikke nogen tabel der rimer på PostalCodes eller City
+
+SELECT count(*)
+FROM Person.Address
+--19614
+
+
+SELECT postalcode, count(PostalCode), city, count(City)
+FROM Person.Address
+GROUP BY PostalCode, City
